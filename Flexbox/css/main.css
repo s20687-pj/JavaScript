@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css?family=PT+Sans:400,700|Roboto:400,700&display=swap&subset=cyrillic-ext");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+  background-color: #8daae5;
+  font-family: "arial", "sens-serif";
+}
+
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  font-size: 2rem;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-shadow: 0 0 4px 0 black;
+          box-shadow: 0 0 4px 0 black;
+  background-color: white;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+  min-height: 100vh;
+  margin: 0px auto;
+  max-width: 1200px;
+}
+
+.logo {
+  -ms-flex-preferred-size: 100px;
+      flex-basis: 100px;
+  background-color: cadetblue;
+}
+
+.search {
+  background-color: #264e1a;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.settings {
+  background-color: #b81460;
+  -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
+  padding: 0 50px;
+}
+
+.menu {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  background-color: darkblue;
+}
+
+.main-articles {
+  background-color: #822da3;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  min-height: 50vh;
+}
+
+.article-list {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  background-color: #54b12f;
+}
+
+.footer {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  background-color: #2da38f;
+}
+/*# sourceMappingURL=main.css.map */

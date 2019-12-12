@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css?family=PT+Sans:400,700|Roboto:400,700&display=swap&subset=cyrillic-ext');
+
+$main-color: #8daae5;
+$default-font: 'arial', 'sens-serif';
+$special-font: 'pt sans', 'roboto', 'arial';
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+html{
+    font-size: 10px;
+    background-color: $main-color;
+    font-family: $default-font;
+    
+}
+.wrapper{
+
+    //kontener
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 2rem;
+    flex-direction: row;
+    //wyglad
+    box-shadow: 0 0 4px 0 black;
+    background-color: white;
+    align-content: flex-start;
+    
+    //pozycja i wielkosc
+    min-height: 100vh;
+    margin: 0px auto;
+    max-width: 1200px;
+}
+.logo{
+    flex-basis: 100px;
+    // height: 80px;
+    background-color: cadetblue;
+
+}
+
+.search{
+    background-color: rgb(38, 78, 26);
+    flex-grow: 1;
+}
+
+.settings{
+    background-color: rgb(184, 20, 96);
+    flex-grow: 0;
+    padding: 0 50px;
+}
+
+.menu{
+    flex-basis: 100%;
+    background-color: darkblue;
+}
+
+.main-articles{
+    background-color: rgb(130, 45, 163);
+    flex-basis: 100%;
+    min-height: 50vh;
+}
+
+.article-list{
+    flex-basis: 100%;
+    background-color: rgb(84, 177, 47);
+}
+.footer{
+    flex-basis: 100%;
+    background-color: rgb(45, 163, 143);
+}
