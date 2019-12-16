@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=PT+Sans:400,700|Roboto:400,700&display=swap&subset=cyrillic-ext');
 
 $main-color: #8daae5;
+$main-color2: #32b6d0;
+$main-color3: #0e3d4a;
+$main-color4: #6d7c7c;
+$main-color5: #d8dfdf;
 $default-font: 'arial', 'sens-serif';
 $special-font: 'pt sans', 'roboto', 'arial';
 
@@ -14,7 +18,7 @@ $special-font: 'pt sans', 'roboto', 'arial';
 
 html{
     font-size: 10px;
-    background-color: $main-color;
+    background-color: $main-color5;
     font-family: $default-font;
     
 }
@@ -37,7 +41,8 @@ html{
 }
 .logo{
     flex-basis: 100px;
-    height: 100px;
+    
+
     //  background-color: cadetblue;
 
     @media (max-width: 799px)
@@ -101,7 +106,7 @@ html{
 
 .settings{
     display: flex;
-    padding: 0 30px 0 50px;
+    padding: 0 50px 0 50px;
     align-items: center;
     @media (max-width: 799px)
     {
@@ -122,10 +127,11 @@ html{
 
 .menu{
     flex-basis: 100%;
-    background-color: rgb(84, 84, 235);
+    background-color: $main-color3
+    ;
     font-family: $special-font;
     height: 70px;
-    margin-top: 10px;
+    
     padding: 15px 0 15px 80px;
     &__list{
         display: flex;
@@ -177,7 +183,7 @@ html{
         .article--small & {
             padding: 25px 0 10px;
             font-size: 1.8rem;
-            background-color: $main-color;
+            background-color: $main-color5;
         }
 
     }
@@ -205,7 +211,7 @@ html{
 }
 
 .main-articles{
-    background-color: $main-color;
+    background-color: $main-color5;
     color: white;
     flex-basis: 100%;
     display: flex;
@@ -213,7 +219,7 @@ html{
     &__intro{
         flex-basis: 100%;
         padding: 10px 0;
-        background-color: rgba($color: #000000, $alpha: 0.2);
+        background-color: rgba($color:$main-color3, $alpha: 0.2);
         margin: 60px 0 30px;
         text-align: center;
         font-size: 4.4rem;
@@ -250,7 +256,7 @@ html{
 .footer{
     flex-basis: 100%;
     display: flex;
-    background-color: $main-color;
+    background-color: $main-color4;
     justify-content: space-evenly;
     padding: 20px 0;
 
@@ -264,7 +270,7 @@ html{
     padding: 20px;
 
     &--darken{
-        background-color: darken($main-color, 25%);
+        background-color: darken($main-color4, 5%);
     }
     &__title{
         margin: 20px 0 40px;
